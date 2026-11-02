@@ -102,14 +102,14 @@ function App() {
       <div className="hero-inner shell">
         <nav className="nav" aria-label="Navigasi utama">
           <a className="brand" href="#top" aria-label="Nilam Garden Farm, kembali ke atas"><Logo/><span>Nilam <strong>Garden Farm</strong></span></a>
-          <div className="nav-links"><a className="active" href="#top">Beranda</a><a href="#story">Cerita kami</a><a href="#garden">Kebun</a><a href="#visit">Kunjungi</a></div>
+          <div className="nav-links"><a className="active" href="#top">Beranda</a><a href="#story">Cerita kami</a><a href="#garden">Kebun</a><a href="#hasil-kebun">Hasil kebun</a><a href="#visit">Kunjungi</a></div>
           <a className="nav-cta" href="#visit">Mari terhubung <Arrow diagonal /></a>
         </nav>
         <div className="hero-copy">
           <p className="location-label">Subang, Jawa Barat</p>
           <h1>Tumbuh bersama<br/>Nilam Garden Farm.</h1>
-          <p className="hero-intro">Kebun di Subang, tempat kami merawat tanaman dan berbagi cerita.</p>
-          <a className="button button-dark" href="#story">Jelajahi cerita kami <Arrow /></a>
+          <p className="hero-intro">Menyediakan kacang panjang, timun, terong, tomat, dan cabai dari kebun kami di Subang.</p>
+          <a className="button button-dark" href="#hasil-kebun">Lihat hasil kebun <Arrow /></a>
         </div>
       </div>
       <div className="hero-image">
@@ -120,20 +120,21 @@ function App() {
 
     
 
-    <section className="story shell" id="story"><div className="section-side"><p className="section-label">Cerita kami</p></div><div className="story-content"><h2>Sebuah kebun untuk tumbuh bersama.</h2><div className="story-bottom"><p>Kami percaya pertanian bukan hanya tentang apa yang dipanen. Ia tentang tanah yang dijaga, pengetahuan yang dibagi, dan hubungan yang tumbuh pelan-pelan.</p><a className="text-link" href="#garden">Lihat kehidupan di kebun <Arrow diagonal /></a></div></div></section>
-
-    <section className="garden shell" id="garden"><div className="section-heading"><div><p className="section-label">Dari kebun kami</p><h2>Di sekitar kebun.</h2></div><p>Setiap sudut punya ritme sendiri. Kami membiarkan musim, tanah, dan tanaman bercerita.</p></div><div className="garden-grid">{cards.map(card => <article className="garden-card" key={card.number}><div className="card-image"><img src={media[card.image]} alt={card.alt} loading="lazy"/><span>{card.category}</span></div><div className="card-meta"><span>{card.number}</span><h3>{card.title}</h3></div></article>)}</div></section>
-
     <section className="produce shell" id="hasil-kebun" aria-labelledby="produce-title">
       <div className="produce-heading">
         <p className="section-label">Hasil kebun</p>
-        <h2 id="produce-title">Kami menyediakan.</h2>
+        <h2 id="produce-title">Sayuran yang kami sediakan.</h2>
         <p>Untuk informasi ketersediaan, hubungi kami melalui WhatsApp.</p>
       </div>
       <ul className="produce-list">
         {['Kacang panjang', 'Timun', 'Terong', 'Tomat', 'Cabai'].map(item => <li key={item}>{item}</li>)}
       </ul>
     </section>
+
+    <section className="story shell" id="story"><div className="section-side"><p className="section-label">Cerita kami</p></div><div className="story-content"><h2>Sebuah kebun untuk tumbuh bersama.</h2><div className="story-bottom"><p>Kami percaya pertanian bukan hanya tentang apa yang dipanen. Ia tentang tanah yang dijaga, pengetahuan yang dibagi, dan hubungan yang tumbuh pelan-pelan.</p><a className="text-link" href="#garden">Lihat kehidupan di kebun <Arrow diagonal /></a></div></div></section>
+
+    <section className="garden shell" id="garden"><div className="section-heading"><div><p className="section-label">Dari kebun kami</p><h2>Di sekitar kebun.</h2></div><p>Setiap sudut punya ritme sendiri. Kami membiarkan musim, tanah, dan tanaman bercerita.</p></div><div className="garden-grid">{cards.map(card => <article className="garden-card" key={card.number}><div className="card-image"><img src={media[card.image]} alt={card.alt} loading="lazy"/><span>{card.category}</span></div><div className="card-meta"><span>{card.number}</span><h3>{card.title}</h3></div></article>)}</div></section>
+
 
     <section className="visit shell" id="visit"><div className="visit-background" style={{ backgroundImage: `linear-gradient(90deg, rgba(15,38,24,.74), rgba(15,38,24,.1)), url("${media['/kebun-2.jpg']}")` }}/><div className="visit-content"><p className="section-label">Subang, Jawa Barat</p><h2>Mari berkunjung<br/>ke kebun.</h2><p>Ingin tahu lebih banyak tentang kebun kami? Hubungi kami lewat WhatsApp.</p><a className="button button-light" href="https://wa.me/6285287405950">Hubungi kami <Arrow /></a><div className="visit-location">Subang, Jawa Barat, Indonesia</div></div></section>
     <footer className="footer shell"><a className="brand" href="#top"><Logo/><span>Nilam <strong>Garden Farm</strong></span></a><p>Dirawat dengan rasa, tumbuh bersama alam.</p><a href="#top">Kembali ke atas ↑</a><span>© 2026 Agung Nilam</span></footer>
