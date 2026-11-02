@@ -11,7 +11,14 @@ const cards = [
   { image: '/kebun-3.jpg', number: '03', category: 'Tanaman', title: 'Mengikuti ritme musim', alt: 'Tanaman kacang panjang di kebun Nilam' },
 ];
 
-const mediaFiles = ['/hero-video.mp4', '/hero-video-poster.jpg', '/kebun-1.jpg', '/kebun-2.jpg', '/kebun-3.jpg'];
+const produce = [
+  { name: 'Kacang panjang', image: '/kacang-panjang.jpg' },
+  { name: 'Timun', image: '/timun.jpg' },
+  { name: 'Terong', image: '/terong.jpg' },
+  { name: 'Tomat', image: '/tomat.jpg' },
+  { name: 'Cabai', image: '/cabai.jpg' },
+];
+const mediaFiles = ['/hero-video.mp4', '/hero-video-poster.jpg', '/kebun-1.jpg', '/kebun-2.jpg', '/kebun-3.jpg', ...produce.map(item => item.image)];
 
 function waitForMedia(url, isVideo) {
   if (!isVideo) {
@@ -127,8 +134,9 @@ function App() {
         <p>Untuk informasi ketersediaan, hubungi kami melalui WhatsApp.</p>
       </div>
       <ul className="produce-list">
-        {['Kacang panjang', 'Timun', 'Terong', 'Tomat', 'Cabai'].map(item => <li key={item}>{item}</li>)}
+        {produce.map(item => <li key={item.name}><img src={media[item.image]} alt="" /><span>{item.name}</span></li>)}
       </ul>
+      <p className="produce-credit">Foto ilustrasi dari <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">Pexels</a></p>
     </section>
 
     <section className="story shell" id="story"><div className="section-side"><p className="section-label">Cerita kami</p></div><div className="story-content"><h2>Sebuah kebun untuk tumbuh bersama.</h2><div className="story-bottom"><p>Kami percaya pertanian bukan hanya tentang apa yang dipanen. Ia tentang tanah yang dijaga, pengetahuan yang dibagi, dan hubungan yang tumbuh pelan-pelan.</p><a className="text-link" href="#garden">Lihat kehidupan di kebun <Arrow diagonal /></a></div></div></section>
