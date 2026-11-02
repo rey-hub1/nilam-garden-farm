@@ -12,7 +12,7 @@ const cards = [
 ];
 
 const produce = [
-  { name: 'Kacang panjang', image: '/kacang-panjang.jpg' },
+  { name: 'Kacang panjang', image: '/kacang-panjang-baru.jpg' },
   { name: 'Timun', image: '/timun.jpg' },
   { name: 'Terong', image: '/terong.jpg' },
   { name: 'Tomat', image: '/tomat.jpg' },
