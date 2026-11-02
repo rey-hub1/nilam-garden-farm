@@ -124,6 +124,17 @@ function App() {
 
     <section className="garden shell" id="garden"><div className="section-heading"><div><p className="section-label">Dari kebun kami</p><h2>Di sekitar kebun.</h2></div><p>Setiap sudut punya ritme sendiri. Kami membiarkan musim, tanah, dan tanaman bercerita.</p></div><div className="garden-grid">{cards.map(card => <article className="garden-card" key={card.number}><div className="card-image"><img src={media[card.image]} alt={card.alt} loading="lazy"/><span>{card.category}</span></div><div className="card-meta"><span>{card.number}</span><h3>{card.title}</h3></div></article>)}</div></section>
 
+    <section className="produce shell" id="hasil-kebun" aria-labelledby="produce-title">
+      <div className="produce-heading">
+        <p className="section-label">Hasil kebun</p>
+        <h2 id="produce-title">Kami menyediakan.</h2>
+        <p>Untuk informasi ketersediaan, hubungi kami melalui WhatsApp.</p>
+      </div>
+      <ul className="produce-list">
+        {['Kacang panjang', 'Timun', 'Terong', 'Tomat', 'Cabai'].map(item => <li key={item}>{item}</li>)}
+      </ul>
+    </section>
+
     <section className="visit shell" id="visit"><div className="visit-background" style={{ backgroundImage: `linear-gradient(90deg, rgba(15,38,24,.74), rgba(15,38,24,.1)), url("${media['/kebun-2.jpg']}")` }}/><div className="visit-content"><p className="section-label">Subang, Jawa Barat</p><h2>Mari berkunjung<br/>ke kebun.</h2><p>Ingin tahu lebih banyak tentang kebun kami? Hubungi kami lewat WhatsApp.</p><a className="button button-light" href="https://wa.me/6285287405950">Hubungi kami <Arrow /></a><div className="visit-location">Subang, Jawa Barat, Indonesia</div></div></section>
     <footer className="footer shell"><a className="brand" href="#top"><Logo/><span>Nilam <strong>Garden Farm</strong></span></a><p>Dirawat dengan rasa, tumbuh bersama alam.</p><a href="#top">Kembali ke atas ↑</a><span>© 2026 Agung Nilam</span></footer>
   </main>;
