@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.DS_Store
+.hallmark/
+.vercel/
+public/1.JPG
+public/2.JPG
+public/3.HEIC
+public/vidio.MP4
+public/field.jpg
+public/garden.jpg
+public/plants.jpg
+public/hero-landscape.jpg
+public/hero-poster.svg
