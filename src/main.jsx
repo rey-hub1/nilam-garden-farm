@@ -13,8 +13,8 @@ const cards = [
 
 const produce = [
   { name: 'Kacang panjang', image: '/kacang-panjang-baru.jpg' },
-  { name: 'Timun', image: '/timun.jpg' },
-  { name: 'Terong', image: '/terong.jpg' },
+  { name: 'Timun', image: '/timun.jpeg' },
+  { name: 'Terong', image: '/terong.jpeg' },
   { name: 'Tomat', image: '/tomat.jpg' },
   { name: 'Cabai', image: '/cabai.jpg' },
 ];
@@ -136,7 +136,7 @@ function App() {
       <ul className="produce-list">
         {produce.map(item => <li key={item.name}><img src={media[item.image]} alt="" /><span>{item.name}</span></li>)}
       </ul>
-      <p className="produce-credit">Foto ilustrasi dari <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">Pexels</a></p>
+      <p className="produce-credit">Sebagian foto ilustrasi dari <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">Pexels</a></p>
     </section>
 
     <section className="story shell" id="story"><div className="section-side"><p className="section-label">Cerita kami</p></div><div className="story-content"><h2>Sebuah kebun untuk tumbuh bersama.</h2><div className="story-bottom"><p>Kami percaya pertanian bukan hanya tentang apa yang dipanen. Ia tentang tanah yang dijaga, pengetahuan yang dibagi, dan hubungan yang tumbuh pelan-pelan.</p><a className="text-link" href="#garden">Lihat kehidupan di kebun <Arrow diagonal /></a></div></div></section>
