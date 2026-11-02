@@ -7,7 +7,7 @@ const Logo = () => <img className="brand-logo" src="/logo-nilam.jpg" alt="" widt
 
 const cards = [
   { image: '/kebun-1.jpg', number: '01', category: 'Kebun', title: 'Tumbuh dengan perhatian', alt: 'Barisan tanaman di kebun Nilam dilihat dari udara' },
-  { image: '/kebun-2.jpg', number: '02', category: 'Kehidupan', title: 'Dekat dengan alam', alt: 'Suasana kebun Nilam dilihat dari udara' },
+  { video: '/kebun-video.mp4', poster: '/kebun-video-poster.jpg', number: '02', category: 'Kehidupan', title: 'Dekat dengan alam', alt: 'Suasana kebun Nilam dari udara' },
   { image: '/kebun-3.jpg', number: '03', category: 'Tanaman', title: 'Mengikuti ritme musim', alt: 'Tanaman kacang panjang di kebun Nilam' },
 ];
 
@@ -18,7 +18,7 @@ const produce = [
   { name: 'Tomat', image: '/tomat.jpg' },
   { name: 'Cabai', image: '/cabai.jpg' },
 ];
-const mediaFiles = ['/hero-video.mp4', '/hero-video-poster.jpg', '/kebun-1.jpg', '/kebun-2.jpg', '/kebun-3.jpg', ...produce.map(item => item.image)];
+const mediaFiles = ['/hero-video.mp4', '/hero-video-poster.jpg', '/kebun-1.jpg', '/kebun-2.jpg', '/kebun-3.jpg', '/kebun-video.mp4', '/kebun-video-poster.jpg', ...produce.map(item => item.image)];
 
 function waitForMedia(url, isVideo) {
   if (!isVideo) {
@@ -141,7 +141,7 @@ function App() {
 
     <section className="story shell" id="story"><div className="section-side"><p className="section-label">Cerita kami</p></div><div className="story-content"><h2>Sebuah kebun untuk tumbuh bersama.</h2><div className="story-bottom"><p>Kami percaya pertanian bukan hanya tentang apa yang dipanen. Ia tentang tanah yang dijaga, pengetahuan yang dibagi, dan hubungan yang tumbuh pelan-pelan.</p><a className="text-link" href="#garden">Lihat kehidupan di kebun <Arrow diagonal /></a></div></div></section>
 
-    <section className="garden shell" id="garden"><div className="section-heading"><div><p className="section-label">Dari kebun kami</p><h2>Di sekitar kebun.</h2></div><p>Setiap sudut punya ritme sendiri. Kami membiarkan musim, tanah, dan tanaman bercerita.</p></div><div className="garden-grid">{cards.map(card => <article className="garden-card" key={card.number}><div className="card-image"><img src={media[card.image]} alt={card.alt} loading="lazy"/><span>{card.category}</span></div><div className="card-meta"><span>{card.number}</span><h3>{card.title}</h3></div></article>)}</div></section>
+    <section className="garden shell" id="garden"><div className="section-heading"><div><p className="section-label">Dari kebun kami</p><h2>Di sekitar kebun.</h2></div><p>Setiap sudut punya ritme sendiri. Kami membiarkan musim, tanah, dan tanaman bercerita.</p></div><div className="garden-grid">{cards.map(card => <article className={`garden-card${card.video ? " card-video" : ""}`} key={card.number}><div className="card-image">{card.video ? <><video autoPlay muted loop playsInline preload="auto" poster={media[card.poster]} aria-label={card.alt}><source src={media[card.video]} type="video/mp4" /></video><p className="card-quote">Pertanian mengajarkan bahwa masa depan tidak ditunggu, melainkan ditanam, dirawat, dan diperjuangkan setiap hari.</p></> : <img src={media[card.image]} alt={card.alt} loading="lazy"/>}<span>{card.category}</span></div><div className="card-meta"><span>{card.number}</span><h3>{card.title}</h3></div></article>)}</div></section>
 
 
     <section className="visit shell" id="visit"><div className="visit-background" style={{ backgroundImage: `linear-gradient(90deg, rgba(15,38,24,.74), rgba(15,38,24,.1)), url("${media['/kebun-2.jpg']}")` }}/><div className="visit-content"><p className="section-label">Subang, Jawa Barat</p><h2>Mari berkunjung<br/>ke kebun.</h2><p>Ingin tahu lebih banyak tentang kebun kami? Hubungi kami lewat WhatsApp.</p><a className="button button-light" href="https://wa.me/6285287405950">Hubungi kami <Arrow /></a><div className="visit-location">Subang, Jawa Barat, Indonesia</div></div></section>
