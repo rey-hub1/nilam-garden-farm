@@ -136,8 +136,7 @@ function App() {
       <ul className="produce-list">
         {produce.map(item => <li key={item.name}><img src={media[item.image]} alt={`${item.name} segar dari kebun Nilam Garden Farm, Subang`} loading="lazy" /><span>{item.name}</span></li>)}
       </ul>
-      <p className="produce-credit">Cari <a href="/supplier-sayur-subang/">supplier sayur di Subang</a>? <a href="/supplier-kacang-panjang/">Kacang panjang</a> · <a href="/supplier-timun/">Timun</a> · <a href="/supplier-terong/">Terong</a> · <a href="/supplier-tomat/">Tomat</a> · <a href="/supplier-cabai/">Cabai</a></p>
-    </section>
+          </section>
 
     <section className="story shell" id="story"><div className="section-side"><p className="section-label">Cerita kami</p></div><div className="story-content"><h2>Sebuah kebun untuk tumbuh bersama.</h2><div className="story-bottom"><p>Kami percaya pertanian bukan hanya tentang apa yang dipanen. Ia tentang tanah yang dijaga, pengetahuan yang dibagi, dan hubungan yang tumbuh pelan-pelan.</p><a className="text-link" href="#garden">Lihat kehidupan di kebun <Arrow diagonal /></a></div></div></section>
 
@@ -145,7 +144,7 @@ function App() {
 
 
     <section className="visit shell" id="visit"><div className="visit-background" style={{ backgroundImage: `linear-gradient(90deg, rgba(15,38,24,.74), rgba(15,38,24,.1)), url("${media['/kebun-2.jpg']}")` }}/><div className="visit-content"><p className="section-label">Subang, Jawa Barat</p><h2>Mari berkunjung<br/>ke kebun.</h2><p>Ingin tahu lebih banyak tentang kebun kami? Hubungi kami lewat WhatsApp.</p><a className="button button-light" href="https://wa.me/6285287405950">Hubungi kami <Arrow /></a><div className="visit-location">Subang, Jawa Barat, Indonesia</div></div></section>
-    <footer className="footer shell"><a className="brand" href="#top"><Logo/><span>Nilam <strong>Garden Farm</strong></span></a><p>Dirawat dengan rasa, tumbuh bersama alam.</p><a href="#top">Kembali ke atas ↑</a><span>© 2026 Agung Nilam</span></footer>
+    <footer className="footer shell"><a className="brand" href="#top"><Logo/><span>Nilam <strong>Garden Farm</strong></span></a><p>Dirawat dengan rasa, tumbuh bersama alam.</p><a href="#top">Kembali ke atas ↑</a><nav className="footer-links" aria-label="Supplier sayur Subang"><a href="/supplier-sayur-subang/">Supplier sayur Subang</a>: <a href="/supplier-kacang-panjang/">Kacang panjang</a> · <a href="/supplier-timun/">Timun</a> · <a href="/supplier-terong/">Terong</a> · <a href="/supplier-tomat/">Tomat</a> · <a href="/supplier-cabai/">Cabai</a></nav><span>© 2026 Agung Nilam</span></footer>
   </main>;
 }
 
