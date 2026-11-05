@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 
 const Arrow = ({ diagonal = false }) => <svg viewBox="0 0 24 24" aria-hidden="true"><path d={diagonal ? 'M5 19 19 5M7 5h12v12' : 'M4 12h15M13 6l6 6-6 6'} /></svg>;
-const Logo = () => <img className="brand-logo" src="/logo-nilam.jpg" alt="" width="48" height="48" />;
+const Logo = () => <img className="brand-logo" src="/logo-nilam.jpg" alt="Logo Nilam Garden Farm" width="48" height="48" />;
 
 const cards = [
   { image: '/kebun-1.jpg', number: '01', category: 'Kebun', title: 'Tumbuh dengan perhatian', alt: 'Barisan tanaman di kebun Nilam dilihat dari udara' },
@@ -134,9 +134,9 @@ function App() {
         <p>Untuk informasi ketersediaan, hubungi kami melalui WhatsApp.</p>
       </div>
       <ul className="produce-list">
-        {produce.map(item => <li key={item.name}><img src={media[item.image]} alt="" /><span>{item.name}</span></li>)}
+        {produce.map(item => <li key={item.name}><img src={media[item.image]} alt={`${item.name} segar dari kebun Nilam Garden Farm, Subang`} loading="lazy" /><span>{item.name}</span></li>)}
       </ul>
-      <p className="produce-credit">Sebagian foto ilustrasi dari <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">Pexels</a></p>
+      <p className="produce-credit">Cari <a href="/supplier-sayur-subang/">supplier sayur di Subang</a>? <a href="/supplier-kacang-panjang/">Kacang panjang</a> · <a href="/supplier-timun/">Timun</a> · <a href="/supplier-terong/">Terong</a> · <a href="/supplier-tomat/">Tomat</a> · <a href="/supplier-cabai/">Cabai</a><br/>Sebagian foto ilustrasi dari <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">Pexels</a></p>
     </section>
 
     <section className="story shell" id="story"><div className="section-side"><p className="section-label">Cerita kami</p></div><div className="story-content"><h2>Sebuah kebun untuk tumbuh bersama.</h2><div className="story-bottom"><p>Kami percaya pertanian bukan hanya tentang apa yang dipanen. Ia tentang tanah yang dijaga, pengetahuan yang dibagi, dan hubungan yang tumbuh pelan-pelan.</p><a className="text-link" href="#garden">Lihat kehidupan di kebun <Arrow diagonal /></a></div></div></section>

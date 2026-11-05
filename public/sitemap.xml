@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://nilam-garden-farm.vercel.app/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://nilam-garden-farm.vercel.app/logo-nilam.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://nilam-garden-farm.vercel.app/supplier-sayur-subang/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://nilam-garden-farm.vercel.app/kebun-1.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://nilam-garden-farm.vercel.app/supplier-kacang-panjang/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://nilam-garden-farm.vercel.app/kacang-panjang-baru.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://nilam-garden-farm.vercel.app/supplier-timun/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://nilam-garden-farm.vercel.app/timun.jpeg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://nilam-garden-farm.vercel.app/supplier-terong/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://nilam-garden-farm.vercel.app/terong.jpeg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://nilam-garden-farm.vercel.app/supplier-tomat/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://nilam-garden-farm.vercel.app/tomat.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://nilam-garden-farm.vercel.app/supplier-cabai/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://nilam-garden-farm.vercel.app/cabai.jpg</image:loc></image:image>
+  </url>
+</urlset>
