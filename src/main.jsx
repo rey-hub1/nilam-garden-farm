@@ -136,7 +136,7 @@ function App() {
       <ul className="produce-list">
         {produce.map(item => <li key={item.name}><img src={media[item.image]} alt={`${item.name} segar dari kebun Nilam Garden Farm, Subang`} loading="lazy" /><span>{item.name}</span></li>)}
       </ul>
-      <p className="produce-credit">Cari <a href="/supplier-sayur-subang/">supplier sayur di Subang</a>? <a href="/supplier-kacang-panjang/">Kacang panjang</a> · <a href="/supplier-timun/">Timun</a> · <a href="/supplier-terong/">Terong</a> · <a href="/supplier-tomat/">Tomat</a> · <a href="/supplier-cabai/">Cabai</a><br/>Sebagian foto ilustrasi dari <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">Pexels</a></p>
+      <p className="produce-credit">Cari <a href="/supplier-sayur-subang/">supplier sayur di Subang</a>? <a href="/supplier-kacang-panjang/">Kacang panjang</a> · <a href="/supplier-timun/">Timun</a> · <a href="/supplier-terong/">Terong</a> · <a href="/supplier-tomat/">Tomat</a> · <a href="/supplier-cabai/">Cabai</a></p>
     </section>
 
     <section className="story shell" id="story"><div className="section-side"><p className="section-label">Cerita kami</p></div><div className="story-content"><h2>Sebuah kebun untuk tumbuh bersama.</h2><div className="story-bottom"><p>Kami percaya pertanian bukan hanya tentang apa yang dipanen. Ia tentang tanah yang dijaga, pengetahuan yang dibagi, dan hubungan yang tumbuh pelan-pelan.</p><a className="text-link" href="#garden">Lihat kehidupan di kebun <Arrow diagonal /></a></div></div></section>
